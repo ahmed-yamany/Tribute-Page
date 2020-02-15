@@ -32,7 +32,11 @@ ul {
 a {
     text-decoration: none;
 }
-
+h1{
+    font-size: 2.5rem;
+    font-family: "Sriracha", sans-serif;
+    margin: 2rem 0;
+}
 #header {
     width: 100%;
     position: fixed;
@@ -153,15 +157,12 @@ nav {
     text-align: center;
 }
 
-.message {
-    margin-bottom: 2rem;
+#about .message {
+    margin-bottom: 3rem;
 }
-
-.message h1 {
-    font-size: 2.5rem;
-    font-family: "Sriracha", sans-serif;
+.message h1{
+    margin-bottom: 0.5rem;
 }
-
 .message p {
     font-size: 1rem;
     letter-spacing: 2.2px;
@@ -226,7 +227,7 @@ nav {
     color: rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 700px) {
     #img-div {
 
 
@@ -263,16 +264,11 @@ nav {
     text-align: center;
 }
 
-#linux-story h1 {
-    font-size: 2.5rem;
-    font-family: "Sriracha", sans-serif;
-
-}
-
 #linux-story video {
     border-radius: 25px;
     margin: 2rem 0;
     width: 95%;
+    z-index: -2;
 
 }
 
@@ -315,7 +311,40 @@ nav {
 
 
     }
+}
+
+        /* personal life */
 
 
+
+
+#personal-life{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #566270;
+    color: #FFFFF3;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+    margin-top: 2rem;
+
+}
+#personal-life h1{
+    margin-bottom: 1rem;
+}
+#personal-life p{
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    line-height: 1.6rem;
+    text-align: justify;
+    
+}
+@media screen and (min-width: 950px) {
+  
+    #personal-life p{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
 
 }
